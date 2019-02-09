@@ -5,8 +5,6 @@ function sendRequest(url){
 	xhttp.onreadystatechange = function(){
 		if(this.status == 200){
 			document.getElementById("textBoxGET").innerHTML = this.responseText;
-		
-
 		}
 	}
 
@@ -18,4 +16,15 @@ function sendRequest(url){
 	xhttp.setRequestHeader("apiKey", "prod-ac383b2dcc8a321d708fa03cc7968e2dfd49a7a2b4fd10c865acac27f0eda56248183de09dad3979dc1ebb0f08fe2b9b7d9df6c92bedc297cb7847b9e6d1a3dc");
 	
 	xhttp.send();
+}
+
+function changeMenu(x){
+	x.classList.toggle("change");
+	document.getElementById("dropdown").classList.toggle("show");
+}
+
+window.onclick = function(event){
+	if(!event.target.matches('topMenu')){
+		var menuItems = document.getElementsByClassName("")
+	}
 }
