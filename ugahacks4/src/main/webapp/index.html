@@ -14,9 +14,36 @@
 	<title>fiserv.</title>
 </head>
 <body>
-<div id="navBar">
-<h1>fiserv. payment solutions</h1>
-<h2>By Daniel Lim and Jason Fan</h2>
+<div class="topnav" id="navBar">
+	<h1>fiserv. payment solutions</h1>
+	<div class="topMenu" onclick="changeMenu(this)" align="right">
+		<div class="bar1"></div>
+		<div class="bar2"></div>
+		<div class="bar3"></div>
+	</div>
+	<div id="dropdown" class="dropdownContent">
+		<a href="#home">Home</a>
+		<a href="#about">About</a>
+		<a href="#contact">Contact</a>
+	</div>
 </div>
+
+<form>
+	<input type="text" class="inputBox" id="testInput">
+	<button class="buttons" id="testButton">Click Me</button>
+</form>
+<textarea rows="10" cols="50"></textarea>
+<script>
+	function changeMenu(x){
+		x.classList.toggle("change");
+		document.getElementById("dropdown").classList.toggle("show");
+	}
+	
+	window.onclick = function(event){
+		if(!event.target.matches('topMenu')){
+			var menuItems = document.getElementsByClassName("")
+		}
+	}
+</script>
 </body>
 </html>
