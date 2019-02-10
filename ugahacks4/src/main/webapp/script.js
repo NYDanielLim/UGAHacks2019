@@ -37,10 +37,7 @@ function changeMenu(x){
     x.classList.toggle("change");
     document.getElementById("dropdown").classList.toggle("show");
 }
-function scrollToPricing() {
-    var position = $("#extraInfoBox").position();
-    window.scrollTo({top: position.top, behavior: "smooth"});
-}
+
 function newAjax(){
 	var url = "https://certwebservices.ft.cashedge.com/sdk/Payments/Customers";
 	var cityLine = document.getElementById("city").value;
