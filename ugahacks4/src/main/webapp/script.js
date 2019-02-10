@@ -11,7 +11,7 @@ function sendRequest(url){
 	}
 	xhttp.onload=function(){
 		var ourData = JSON.parse(xhttp.responseText);
-		console.log(ourData.customerList[0].referenceNumber);
+		console.log(ourData.customerList[1].customerID);
 		//document.getElementById("textFromGet").innerHTML = ourData.customerList[0].referenceNumber;
 		renderHTML(ourData);
 	}

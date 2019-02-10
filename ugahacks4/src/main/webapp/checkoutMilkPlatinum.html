@@ -1,26 +1,86 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<link href="checkoutStyle.css" type="text/css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Raleway:300,400,600"
+	rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700"
+	rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto:100,400"
+	rel="stylesheet">
+<script src="script.js"></script>
+<link rel="stylesheet"
+	href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+	integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+	crossorigin="anonymous">
+
 	<title>Checkout</title>
 </head>
 <body>
+
+<div style="margin-bottom:60px; margin-left:60px; margin-top:25px; text-align:center;text-decoration:underline;"id="heading"><h1>Checkout</h1></div>
 <div id="overallCheckout">
 	
-	<div id="customerInformation">
+	<div id="customerInformation" class = "container">
 		<form>
+		
+		<table>
+		<tr>
+		    <td>Email:</td>
+		    <td><input style="margin-left:30px;"type="text" /></td>
+		</tr>
+		<tr>
+		    <td>First Name:</td>
+		    <td><input style="margin-left:30px;margin-top:16px"type="text" /></td>
+		</tr>
+		<tr>
+		    <td>Last Name:</td>
+		    <td><input style="margin-left:30px;margin-top:16px"type="text" /></td>
+		</tr>
+		<tr>
+		    <td>Address:</td>
+		    <td><input style="margin-left:30px;margin-top:16px"type="text" /></td>
+		</tr>
+		<tr>
+		    <td>Apt, suite, etc:</td>
+		    <td><input style="margin-left:30px;margin-top:16px"type="text" /></td>
+		</tr>
+		<tr>
+		    <td>City:</td>
+		    <td><input style="margin-left:30px;margin-top:16px"type="text" /></td>
+		</tr>
+		<tr>
+		    <td>Country:</td>
+		    <td><input style="margin-left:30px;margin-top:16px"type="text" /></td>
+		</tr>
+		<tr>
+		    <td>State:</td>
+		    <td><input style="margin-left:30px;margin-top:16px"type="text" /></td>
+		</tr>
+		<tr>
+		    <td>Zip:</td>
+		    <td><input style="margin-left:30px;margin-top:16px"type="text" /></td>
+		</tr>
+		<tr>
+		    <td>Phone Number:</td>
+		    <td><input style="margin-left:30px;margin-top:16px"type="text" /></td>
+		</tr>
+		</table>
 			
-
-
-
-
-			
+	
+    		
 		</form>
-
 	</div>
 
 	<div id="orderSummary">
-		
+		<h1 style="text-decoration:underline">Order Summary</h1>
+		<h2>Subscription: milkPlatinum</h2>
+		<h2>$100</h2>
+		<h3>Discount: $0</h3>
 
+		<h1>Total:	$100</h1>
+
+		<h1>Payment Due: USD $100</h1>
 
 	</div>
 </div>

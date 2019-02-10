@@ -1,0 +1,19 @@
+#overallCheckout{
+	display:flex;
+	flex-direction:row;
+	align-items:center;
+	justify-content:center;
+}
+#customerInformation{
+	margin-left:50px;
+	width:500px;
+	
+}
+#orderSummary{
+	margin-right:60px;
+}
+.container input {
+  width: 300px;
+  clear: both;
+}
+
