@@ -20,11 +20,11 @@ body{
 	flex-direction:column;
 	align-items:center;
 	
-		top:0;
+		top-margin:180px;
 		left:0;
 		min-height:100%;
 		width: 100%;
-		z-index:1000;
+		z-index:1;
 		background-color:rgba(0,0,0,0.4);
 }
 
@@ -135,4 +135,74 @@ body{
   padding-left:4px;
     padding-right:4px;
 
+}
+#navBar{
+	background-color: #BC986A;
+	margin:0; 	
+	display:flex;
+	flex-direction:row;
+	justify-content:space-between;
+	z-index:1000;
+	align-items:center;
+}
+#dropDownBox{
+	margin-right:110px;
+}
+#navBar h2{
+	display: inline;
+	font-family: Raleway;
+	color: white;
+	padding-top:6px;
+	padding-left: 30px;
+}
+.bar1, .bar2, .bar3{
+	width: 35px;
+	height: 5px;
+	background-color: white;
+	margin: 6px 0;
+	transition: 0.4s;
+}
+
+.change .bar1{
+	-webkit-transform: rotate(-45deg) translate(-9px, 6px);
+	transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2{
+	opacity: 0;
+}
+
+.change .bar3{
+	-webkit-transform: rotate(45deg) translate(-8px, -8px);
+	transform: rotate(45deg) translate(-8px, -8px);
+}
+
+.topMenu{
+	display: inline-block;
+	margin-right:10px;
+}
+
+.dropdownContent{
+	display: none;
+	z-index:1000;
+	position: absolute;
+	background-color: #f1f1f1;
+	min-width: 160px;
+	margin-right:100px;
+	margin-top:98px;
+	margin-left:1200px;
+	overflow: auto;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	
+}
+
+.dropdownContent a{
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+}
+
+.show{
+	display: block;
 }
