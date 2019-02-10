@@ -4,8 +4,16 @@ function sendRequest(url){
 	
 	xhttp.onreadystatechange = function(){
 		if(this.status == 200){
-			document.getElementById("textBoxGET").innerHTML = this.responseText;
+			
+			
+			document.getElementById("textFromGet").innerHTML = this.responseText;
 		}
+	}
+	xhttp.onload=function(){
+		var ourData = JSON.parse(xhttp.responseText);
+		console.log(ourData.customerList[0].referenceNumber);
+		//document.getElementById("textFromGet").innerHTML = ourData.customerList[0].referenceNumber;
+		renderHTML(ourData);
 	}
 
 	xhttp.open("GET",url,true);
@@ -17,14 +25,17 @@ function sendRequest(url){
 	
 	xhttp.send();
 }
-
+function renderHTML(data){
+	var htmlString="";
+	
+	for(i=0; i<data.length; i++){
+		console.log(data[i]);
+	}
+}
 function changeMenu(x){
+	
 	x.classList.toggle("change");
 	document.getElementById("dropdown").classList.toggle("show");
 }
 
-window.onclick = function(event){
-	if(!event.target.matches('topMenu')){
-		var menuItems = document.getElementsByClassName("")
-	}
-}
+
