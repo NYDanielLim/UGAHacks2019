@@ -15,11 +15,9 @@
 </head>
 <body>
 <div class="topnav" id="navBar">
-	<h1>fiserv.</h1>
-		
-	<div id="dropDownBox">
-	<div class="topMenu" id="hamburger" onclick="changeMenu(this)" align="right">
-		<div class="bar1" ></div>
+	<h1>fiserv. payment solutions</h1>
+	<div class="topMenu" onclick="changeMenu(this)" align="right">
+		<div class="bar1"></div>
 		<div class="bar2"></div>
 		<div class="bar3"></div>
 	</div>
@@ -28,20 +26,12 @@
 		<a href="#about">About</a>
 		<a href="#contact">Contact</a>
 	</div>
-	</div>
-</div>
-<div id="descriptionBox">
-<h1>List of Customers</h1>
-<h2></h2>
-
-
-</div>
-<div id ="customerInfoBox">
-	<button id="getInfo" class="buttons" onclick="sendRequest('https://certwebservices.ft.cashedge.com/sdk/Payments/Customers?requestID=test&pageNumber=1&pageSize=1&startDate=02/07/2019&endDate=02/09/2019')" id="testButton">Click Me</button>
-	<textarea id="textFromGet" rows="10" cols="50"></textarea>
 </div>
 
 
-<a href="paymentPortal.html">PAY HERE</a>
+<button class="buttons" onclick="sendRequest('https://certwebservices.ft.cashedge.com/sdk/Payments/Customers?requestID=test&pageNumber=1&pageSize=1&startDate=02/07/2019&endDate=02/09/2019')" id="testButton">Click Me</button>
+<textarea id="textBoxGET" rows="10" cols="50"></textarea>
+
+<a href="homePage.html">PAY <HEADER></HEADER></a>
 </body>
 </html>

@@ -1,0 +1,134 @@
+body{
+	margin:0;
+	font-family:Raleway;
+}
+#video-bg-elem{
+	width:100%;
+	height:100%;
+}
+.background-wrap{
+	position: fixed;
+	z-index: -1000;
+	overflow: hidden;
+	
+	top:0;
+	left:0;
+}
+.content{
+	position:absolute;
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+	
+		top:0;
+		left:0;
+		min-height:100%;
+		width: 100%;
+		z-index:1000;
+		background-color:rgba(0,0,0,0.4);
+}
+
+#introScreen{
+	height: 100vh;
+	width: 100%;
+}
+#aboutUs{
+	height: 1500px;
+	background:white;
+	margin-top:0;
+	
+}
+#aboutUsText{
+	background:white;
+	margin-left:100px;
+	margin-right:100px;
+    box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+    border-radius: 6px;
+    margin-bottom: 30px;
+}
+#aboutUs h1{
+	margin-top:0;
+}
+#ourDescription{
+	display:flex;
+	flex-direction:row;
+	justify-content:space-around;
+}
+#cowText{
+	width:400px;
+	height:400px;
+}
+#cowPicture{
+	width:400px;
+	height:400px;
+}
+
+#extraInfoBox{
+	background:white;
+	
+	margin-top:50px;
+    align-items: center;
+    margin-bottom: 30px;
+    width:100%;
+    display: flex;
+    justify-content: space-around;
+}
+#extraInfoBox h1{
+	padding: 0;
+	text-align: center;
+}
+#milkBasic{
+
+	background:white;
+    box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+    border-radius: 6px;
+    margin-bottom: 30px;
+    height:300px;
+    font-weight: 300;
+    width: 340px;
+	text-align:center;
+    margin-top:60px;
+    padding-left:4px;
+    padding-right:4px;
+}
+#milkPlus{
+
+	background:white;
+	font-weight: 300;
+	margin-top:60px;
+	text-align:center;
+    box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+    border-radius: 6px;
+    margin-bottom: 30px;
+    height:300px;
+    width: 340px;
+	 padding-left:4px;
+    padding-right:4px;
+}
+#milkBasic h1{
+	text-align: center;
+	padding:0;
+}
+#milkPlus h1{
+	text-align: center;
+	padding:0;
+}
+#milkPlatinum h1{
+	text-align: center;
+	padding:0;
+}
+#milkPlatinum{
+
+	background:white;
+	font-weight: 300;
+	margin-top:60px;
+	text-align:center;
+    box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+    border-radius: 6px;
+    margin-bottom: 30px;
+    height:300px;
+    width: 340px;
+  padding-left:4px;
+    padding-right:4px;
+
+}
